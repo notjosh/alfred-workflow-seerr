@@ -1,0 +1,22 @@
+{
+  "name": "alfred-workflow-seerr",
+  "version": "1.0.0",
+  "type": "module",
+  "private": true,
+  "packageManager": "pnpm@10.24.0",
+  "scripts": {
+    "build": "node scripts/build.js",
+    "dev": "node scripts/build.js --watch",
+    "link-workflow": "./scripts/link-workflow.sh",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "test": "node --test src/**/*.test.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/node": "^22.19.11",
+    "esbuild": "^0.24.2",
+    "prettier": "^3.8.1",
+    "typescript": "^5.7.0"
+  }
+}
